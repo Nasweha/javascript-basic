@@ -27,7 +27,7 @@ console.log('----------------products rs<50-------------');
                 costly = products.reduce((pro1,pro2)=>pro1[2]>pro2[2]?pro1:pro2)
                 console.log(costly[1]);
 //5. display out of stock product
-console.log('----------------costly---------------------');
+console.log('----------------out of stock---------------------');
 // outofstock = products.reduce((pro1,pro2)=>pro1[3]<pro2[3]?pro1:pro2)
 // console.log(outofstock[1]);
 products.filter(item=>item[3]==0).forEach(items=>console.log(items[1]))

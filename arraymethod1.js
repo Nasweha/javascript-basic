@@ -25,7 +25,7 @@ console.log('------------------ lowest death reate-----------------------');
 covid =  covid_data.reduce((drate1,drate2)=>drate1[3]<drate2[3]?drate1:drate2)
 console.log(covid[1]);
 //4. sort data with +ve case in descending order
-console.log('-------------------------ascending order------------------');
+console.log('-------------------------descending order------------------');
 covid_data.sort((postv1,postv2)=>postv2[2]-postv1[2]).forEach(postv=>console.log(postv))
 
 //5. is district with +ve cases > 15000
@@ -34,7 +34,7 @@ console.log('---------------case>15000---------------');
   console.log(covid);
            
 //6. sort data with 1st dose vaccine ascending order
-console.log('-------------------------descnding order------------------');
+console.log('-------------------------asending order------------------');
 covid_data.sort((dose1,dose2)=>dose1[5]-dose2[5]).forEach(dose=>console.log(dose))
 //7. Print Thrissur details
 console.log('----------------thrissur details--------------');
@@ -58,4 +58,3 @@ console.log(totalpostyCase);
   idukki=  covid_data.find(cured=>cured[1]=='Idukki')
     console.log(idukki[4]);
 
-    
